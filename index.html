@@ -1,32 +1,461 @@
 <!doctype html>
 <html lang="hr">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HN-Electric</title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="HN-Electric – elektroinstalacije, servis i održavanje. Brzo, uredno i pouzdano.">
-  <link rel="canonical" href="https://hn-electric.hr/">
-  <meta name="robots" content="index,follow">
 
+  <title>HN-Electric | Elektroinstalacije, servis i održavanje</title>
+  <meta name="description" content="HN-Electric – elektroinstalacije, servis i održavanje za stanove, kuće, urede i zgrade u Zagrebu i okolici. Brzo, uredno i pouzdano.">
+  <link rel="canonical" href="https://hn-electric.hr/">
+
+  <!-- Open Graph -->
   <meta property="og:title" content="HN-Electric">
-  <meta property="og:description" content="Elektroinstalacije, servis i održavanje.">
+  <meta property="og:description" content="Elektroinstalacije, servis i održavanje za stanove, kuće, urede i zgrade. Zagreb i okolica.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://hn-electric.hr/">
+  <meta property="og:image" content="https://hn-electric.hr/og.jpg">
+  <meta property="og:image:alt" content="HN-Electric – elektroinstalacije">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="HN-Electric">
+  <meta name="twitter:description" content="Elektroinstalacije, servis i održavanje.">
+  <meta name="twitter:image" content="https://hn-electric.hr/og.jpg">
+
+  <!-- Icons -->
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
-</head>
-<body>
-  <!-- Add your site or application content here -->
-  <main>
-    <h1>HN-Electric</h1>
-    <p>Elektroinstalacije, servis i održavanje. Brzo, uredno i pouzdano.</p>
-  </main>
-  <script src="js/app.js" defer></script>
-</body>
+  <meta name="theme-color" content="#0b1220">
 
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page">
+<div class="layout-wrapper">
+  <a class="skip-link" href="#main">Preskoči na sadržaj</a>
+
+  <header class="site-header" role="banner">
+    <div class="container site-header__inner">
+      <a class="brand" href="/" aria-label="HN-Electric – početna">
+        <img class="brand__logo" src="icon.svg" width="32" height="32" alt="">
+        <span class="brand__name">HN-Electric</span>
+      </a>
+
+      <nav class="nav" aria-label="Glavna navigacija">
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav__toggle-text">Izbornik</span>
+        </button>
+
+        <ul id="nav-menu" class="nav__menu">
+          <li class="nav__item"><a class="nav__link" href="#usluge">Usluge</a></li>
+          <li class="nav__item"><a class="nav__link" href="#zasto-mi">Zašto mi</a></li>
+          <li class="nav__item"><a class="nav__link" href="#projekti">Projekti</a></li>
+          <li class="nav__item"><a class="nav__link" href="#faq">FAQ</a></li>
+          <li class="nav__item nav__item--cta"><a class="button button--primary" href="#kontakt">Zatraži ponudu</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-tools">
+        <button class="theme-toggle" type="button" id="themeToggle" aria-label="Promijeni temu">
+          Tema
+        </button>
+
+        <a class="header-cta__phone" href="tel:+385XXXXXXXXX" aria-label="Nazovi HN-Electric">
+          +385 XX XXX XXXX
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="main" role="main">
+    <!-- HERO (Locus vibe, bez foto pozadine) -->
+    <section class="locus-hero" aria-label="Uvod">
+      <div class="container locus-hero__inner">
+        <p class="locus-hero__kicker">HN-Electric • Zagreb</p>
+
+        <h1 class="locus-hero__title">
+          ELEKTROINSTALACIJE<br>
+          ADAPTACIJE I SERVIS<br>
+          UREDI • ZGRADE • STANOVI
+        </h1>
+
+        <p class="locus-hero__lead">
+          Sigurna izvedba, uredan rad i jasni rokovi. Od razvodnih ploča i rasvjete do kompletnih instalacija i održavanja.
+        </p>
+
+        <div class="locus-hero__actions">
+          <a class="button button--primary" href="#kontakt">Zatraži ponudu</a>
+          <a class="button button--secondary" href="tel:+385XXXXXXXXX">Nazovi</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- “Locus” two-block teaser (kao ispod hero-a na referenci) -->
+    <section class="locus-teasers" aria-label="Istaknuto">
+      <div class="container locus-teasers__grid">
+        <article class="locus-teaser">
+          <h2 class="locus-teaser__title">INSTALACIJE & ADAPTACIJE</h2>
+          <p class="locus-teaser__text">
+            Nova ožičenja, utičnice, prekidači, rasvjeta i prilagodbe prostora. Uredan rad i jasna komunikacija.
+          </p>
+          <a class="locus-teaser__link" href="#usluge">Saznaj više</a>
+        </article>
+
+        <article class="locus-teaser">
+          <h2 class="locus-teaser__title">SERVIS & ODRŽAVANJE</h2>
+          <p class="locus-teaser__text">
+            Dijagnostika kvarova, sanacije i održavanje za stanove, zgrade i poslovne prostore – po dogovoru.
+          </p>
+          <a class="locus-teaser__link" href="#kontakt">Javi se</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- USLUGE -->
+    <section id="usluge" class="section services" aria-label="Usluge">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Usluge</h2>
+          <p class="section__lead">Sve što trebaš za sigurnu i modernu elektriku – od planiranja do izvedbe i održavanja.</p>
+        </header>
+
+        <div class="grid grid--3">
+          <article class="card service">
+            <h3 class="service__title">Elektroinstalacije</h3>
+            <p class="service__text">Nove instalacije, adaptacije, razvod, utičnice, prekidači, rasvjeta, zaštite.</p>
+            <ul class="list list--ticks">
+              <li>Stanovi i kuće</li>
+              <li>Uredi i poslovni prostori</li>
+              <li>Zgrade i zajednički prostori</li>
+            </ul>
+          </article>
+
+          <article class="card service">
+            <h3 class="service__title">Razvodne ploče i zaštita</h3>
+            <p class="service__text">Ugradnja/rekonstrukcija ormara, osigurači, RCD/FI, prenaponska zaštita, označavanje.</p>
+            <ul class="list list--ticks">
+              <li>Sigurnost i standardi</li>
+              <li>Čisto ožičenje</li>
+              <li>Dokumentacija po potrebi</li>
+            </ul>
+          </article>
+
+          <article class="card service">
+            <h3 class="service__title">Servis i održavanje</h3>
+            <p class="service__text">Dijagnostika kvarova, zamjene, sanacije, redovni pregledi i održavanje objekata.</p>
+            <ul class="list list--ticks">
+              <li>Brza intervencija</li>
+              <li>Preventivni pregledi</li>
+              <li>Održavanje za firme</li>
+            </ul>
+          </article>
+
+          <article class="card service">
+            <h3 class="service__title">Rasvjeta</h3>
+            <p class="service__text">Unutarnja i vanjska rasvjeta, LED nadogradnje, senzori pokreta, automatika.</p>
+            <ul class="list list--ticks">
+              <li>Ušteda energije</li>
+              <li>Estetika i funkcija</li>
+              <li>Planiranje zone</li>
+            </ul>
+          </article>
+
+          <article class="card service">
+            <h3 class="service__title">Pametna rješenja</h3>
+            <p class="service__text">Osnovna automatizacija, timeri, pametni prekidači, daljinsko upravljanje.</p>
+            <ul class="list list--ticks">
+              <li>Praktično i jednostavno</li>
+              <li>Po mjeri objekta</li>
+              <li>Skalabilno</li>
+            </ul>
+          </article>
+
+          <article class="card service">
+            <h3 class="service__title">Industrija i komercijala</h3>
+            <p class="service__text">Uredi, skladišta, lokali: izvedba, održavanje, dogovoreni termini i minimalni zastoji.</p>
+            <ul class="list list--ticks">
+              <li>Rad van radnog vremena</li>
+              <li>Jasni dogovori</li>
+              <li>Fokus na pouzdanost</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ZAŠTO MI -->
+    <section id="zasto-mi" class="section why" aria-label="Zašto HN-Electric">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Zašto HN-Electric</h2>
+          <p class="section__lead">Radimo uredno, komuniciramo jasno i predajemo posao kako treba – bez iznenađenja.</p>
+        </header>
+
+        <div class="grid grid--2">
+          <div class="card why__card">
+            <h3 class="why__title">Kvaliteta i sigurnost</h3>
+            <p class="why__text">Fokus na ispravnoj zaštiti, urednoj izvedbi i dugotrajnom rješenju.</p>
+          </div>
+          <div class="card why__card">
+            <h3 class="why__title">Urednost i rokovi</h3>
+            <p class="why__text">Dolazimo pripremljeni, štitimo prostor i držimo se dogovorenih rokova.</p>
+          </div>
+          <div class="card why__card">
+            <h3 class="why__title">Transparentna ponuda</h3>
+            <p class="why__text">Jasno što ulazi u cijenu. Po potrebi dajemo varijante (standard / premium).</p>
+          </div>
+          <div class="card why__card">
+            <h3 class="why__title">Za firme i privatno</h3>
+            <p class="why__text">Od malih popravaka do većih instalacija – prilagodimo se objektu i rasporedu.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCES -->
+    <section class="section process" aria-label="Kako radimo">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Kako radimo</h2>
+          <p class="section__lead">Jednostavno i jasno – od upita do gotove instalacije.</p>
+        </header>
+
+        <ol class="steps" aria-label="Koraci">
+          <li class="steps__item">
+            <h3 class="steps__title">1) Upit i dogovor</h3>
+            <p class="steps__text">Pošalji opis ili slike. Dogovorimo obilazak ako treba.</p>
+          </li>
+          <li class="steps__item">
+            <h3 class="steps__title">2) Ponuda</h3>
+            <p class="steps__text">Dobiješ jasnu ponudu s obuhvatom i okvirnim rokom.</p>
+          </li>
+          <li class="steps__item">
+            <h3 class="steps__title">3) Izvedba</h3>
+            <p class="steps__text">Uredno izvođenje, zaštita prostora, komunikacija tijekom radova.</p>
+          </li>
+          <li class="steps__item">
+            <h3 class="steps__title">4) Predaja i podrška</h3>
+            <p class="steps__text">Provjera, objašnjenje i podrška nakon izvedbe.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PROJEKTI -->
+    <section id="projekti" class="section projects" aria-label="Projekti">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Primjeri radova</h2>
+          <p class="section__lead">Nekoliko tipičnih projekata koje često radimo.</p>
+        </header>
+
+        <div class="grid grid--3">
+          <article class="card project">
+            <h3 class="project__title">Adaptacija stana</h3>
+            <p class="project__text">Nova instalacija po prostorijama, LED rasvjeta, razvodna ploča i zaštita.</p>
+            <ul class="meta">
+              <li class="meta__item">Rok: 2–5 dana</li>
+              <li class="meta__item">Tip: stambeno</li>
+            </ul>
+          </article>
+
+          <article class="card project">
+            <h3 class="project__title">Ured / poslovni prostor</h3>
+            <p class="project__text">Utičnice, rasvjeta, senzori, dogovoreni termini i minimalni zastoji.</p>
+            <ul class="meta">
+              <li class="meta__item">Rok: po dogovoru</li>
+              <li class="meta__item">Tip: komercijala</li>
+            </ul>
+          </article>
+
+          <article class="card project">
+            <h3 class="project__title">Zgrada – zajednički prostor</h3>
+            <p class="project__text">Rasvjeta stubišta, automatika, zamjena instalacija, održavanje.</p>
+            <ul class="meta">
+              <li class="meta__item">Model: održavanje</li>
+              <li class="meta__item">Tip: zgrada</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section faq" aria-label="Česta pitanja">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Česta pitanja</h2>
+        </header>
+
+        <div class="faq__items">
+          <details class="faq__item">
+            <summary class="faq__question">Radite li izlazak na teren i procjenu?</summary>
+            <div class="faq__answer">
+              <p>Da. Za složenije radove dogovorimo obilazak kako bi ponuda bila precizna.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">Koliko brzo možete doći na intervenciju?</summary>
+            <div class="faq__answer">
+              <p>Ovisi o zauzetosti i lokaciji. Za hitne situacije pokušavamo isti dan ili što prije po dogovoru.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">Dajete li račun/ponudu za firmu?</summary>
+            <div class="faq__answer">
+              <p>Da, radimo i za privatne i poslovne klijente. Dogovorimo uvjete unaprijed.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="kontakt" class="section contact" aria-label="Kontakt">
+      <div class="container contact__grid">
+        <div class="contact__content">
+          <h2 class="section__title">Zatraži ponudu</h2>
+          <p class="section__lead">Pošalji kratak opis i lokaciju. Ako imaš slike/plan – još bolje.</p>
+
+          <ul class="contact-cards" aria-label="Kontakt informacije">
+            <li class="card contact-card">
+              <h3 class="contact-card__title">Telefon</h3>
+              <p class="contact-card__value"><a href="tel:+385XXXXXXXXX">+385 XX XXX XXXX</a></p>
+            </li>
+            <li class="card contact-card">
+              <h3 class="contact-card__title">Email</h3>
+              <p class="contact-card__value"><a href="mailto:info@hn-electric.hr">info@hn-electric.hr</a></p>
+            </li>
+            <li class="card contact-card">
+              <h3 class="contact-card__title">Područje rada</h3>
+              <p class="contact-card__value">Zagreb i okolica – po dogovoru</p>
+            </li>
+          </ul>
+        </div>
+
+        <form class="card form" action="#" method="post">
+          <div class="form__row">
+            <label class="form__label" for="name">Ime i prezime</label>
+            <input class="form__input" id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+
+          <div class="form__row">
+            <label class="form__label" for="phone">Telefon</label>
+            <input class="form__input" id="phone" name="phone" type="tel" autocomplete="tel" required>
+          </div>
+
+          <div class="form__row">
+            <label class="form__label" for="email">Email (opcionalno)</label>
+            <input class="form__input" id="email" name="email" type="email" autocomplete="email">
+          </div>
+
+          <div class="form__row">
+            <label class="form__label" for="location">Lokacija</label>
+            <input class="form__input" id="location" name="location" type="text" autocomplete="address-level2" required>
+          </div>
+
+          <div class="form__row">
+            <label class="form__label" for="message">Opis posla</label>
+            <textarea class="form__textarea" id="message" name="message" rows="6" required></textarea>
+          </div>
+
+          <div class="form__row form__row--consent">
+            <label class="form__checkbox">
+              <input type="checkbox" name="consent" required>
+              <span>Slažem se da me kontaktirate u vezi upita.</span>
+            </label>
+          </div>
+
+          <button class="button button--primary button--block" type="submit">Pošalji upit</button>
+
+          <p class="form__hint">
+            Savjet: za bržu ponudu, napiši kvadraturu i što točno treba (npr. “nova razvodna + 12 utičnica + LED rasvjeta”).
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <span class="footer__name">HN-Electric</span>
+        <p class="footer__text">Elektroinstalacije, servis i održavanje.</p>
+      </div>
+
+      <div class="footer__col">
+        <h2 class="footer__title">Kontakt</h2>
+        <ul class="footer__list">
+          <li><a href="tel:+385XXXXXXXXX">+385 XX XXX XXXX</a></li>
+          <li><a href="mailto:info@hn-electric.hr">info@hn-electric.hr</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h2 class="footer__title">Navigacija</h2>
+        <ul class="footer__list">
+          <li><a href="#usluge">Usluge</a></li>
+          <li><a href="#projekti">Projekti</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h2 class="footer__title">Pravno</h2>
+        <ul class="footer__list">
+          <li><a href="/privacy.html">Privatnost</a></li>
+          <li><a href="/terms.html">Uvjeti</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <small>© <span id="year"></span> HN-Electric. Sva prava pridržana.</small>
+    </div>
+  </footer>
+
+  <!-- Schema.org (LocalBusiness) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Electrician",
+      "name": "HN-Electric",
+      "url": "https://hn-electric.hr/",
+      "image": "https://hn-electric.hr/og.jpg",
+      "telephone": "+385XXXXXXXXX",
+      "email": "info@hn-electric.hr",
+      "areaServed": "Zagreb i okolica",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Ulica 1",
+        "addressLocality": "Zagreb",
+        "postalCode": "10000",
+        "addressCountry": "HR"
+      },
+      "sameAs": [],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "08:00",
+          "closes": "16:00"
+        }
+      ]
+    }
+  </script>
+
+  <script src="js/app.js" defer></script>
+
+  <noscript>
+    <div class="noscript">
+      Za najbolje iskustvo uključi JavaScript. Stranica radi i bez njega, ali izbornik na mobitelu možda neće.
+    </div>
+  </noscript>
+</div>
+</body>
 </html>
