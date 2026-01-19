@@ -3180,12 +3180,6 @@ h3 i.fa-solid{
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Efekt na hover */
-.service-box:hover {
-	transform: translateY(-5px); /* Malo se podigne */
-	box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-	border-color: white; /* Rub postane zlatan */
-}
 
 /* Ikone unutar kocke */
 .service-box i {
