@@ -1,4 +1,3 @@
-
 .fa, .fa-solid, .fas {
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
@@ -24,14 +23,29 @@
     font-display: block;
     src: url("../webfonts/fa-solid-900.woff2") format("woff2");
 }
+.fa-gears {
+    --fa: "\f085";
+}
+.fa-lightbulb {
+    --fa: "\f0eb";
+}
 
-/* 4) Only the icons you need */
-.fa-lightbulb { --fa: "\f0eb"; }
-.fa-house     { --fa: "\f015"; }
-.fa-briefcase { --fa: "\f0b1"; }
-.fa-wifi      { --fa: "\f1eb"; }
+.fa-plug-circle-bolt {
+    --fa: "\e55b";
+}
+
+.fa-microchip {
+    --fa: "\f2db";
+}
+
+.fa-city {
+    --fa: "\f64f";
+}
+.fa-house-chimney {
+    --fa: "\e3af";
+}
 .fa-screwdriver-wrench { --fa: "\f7d9"; }
 .fa-handshake { --fa: "\f2b5"; }
-.fa-phone     { --fa: "\f095"; }
-.fa-envelope { --fa: "\f0e0"; }
+/* 4) Only the icons you need */
 
+.fa-envelope { --fa: "\f0e0"; }
